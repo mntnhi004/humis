@@ -31,7 +31,7 @@ section.main-content-area {
     flex-direction: column;
     justify-content: space-between;
 
-    nav {
+    nav.secondary {
         min-height: 20px;
         border: 1px dotted green;
         text-align: right;
@@ -83,7 +83,16 @@ section.main-content-area {
             }
 
             nav{
-                min-height:60%
+                a{
+                    display: block;
+                    text-decoration: none;
+                    color: black;
+
+                    &:hover{
+                        color: white;
+                        background-color: black;
+                    }
+                }
             }
 
             .link{
