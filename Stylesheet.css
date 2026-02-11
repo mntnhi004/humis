@@ -85,6 +85,12 @@ section.main-content-area {
             nav{
                 min-height:60%
             }
+
+            .link{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
         }
         .right-side{
             width: 60%;
