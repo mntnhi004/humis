@@ -1,6 +1,7 @@
-body{
+body {
     font-family: Arial, Helvetica, sans-serif;
 }
+
 div#parent {
     border: 1px solid black;
     width: 780px;
@@ -11,11 +12,12 @@ div#parent section {
     border: 1px solid black;
 }
 
-section.sub-heading{
+section.sub-heading {
     background: url('files/histBooks01.jpg') top left no-repeat;
     height: 50px;
 }
-section.footer-heading{
+
+section.footer-heading {
     background-color: #60663E;
     height: 20px;
     font-size: 10px;
@@ -24,6 +26,7 @@ section.footer-heading{
     padding-top: 8px;
     color: white;
 }
+
 section.main-content-area {
     /*.main-content-area*/
     min-height: 400px;
@@ -50,9 +53,10 @@ section.main-content-area {
             }
         }
 
-        &.bottom{
+        &.bottom {
             font-size: 11px;
-            a{
+
+            a {
                 text-transform: lowercase;
             }
 
@@ -66,64 +70,70 @@ section.main-content-area {
         border-radius: 15px;
         min-height: 400px;
         display: flex;
+        justify-content: space-between;
 
         > * {
-            border: 1px solid black;
-            margin: 10px;
+            margin: 10px
         }
 
-        .left-side{
-            width: 40%;
+
+        .left-side {
+            width: 37%;
             display: flex;
             flex-direction: column;
-            justify-content: space-around;
+            justify-content: space-between;
 
-            >* {
-                border: 1px solid black;
-            }
-
-            nav{
-                a{
+            nav {
+                a {
                     display: block;
                     text-decoration: none;
                     color: black;
+                    border-bottom: 2px solid #60663E;
+                    text-transform: uppercase;
+                    font-size: 12px;
+                    padding: 8px 0 8px 12px;
 
-                    &:hover{
+
+                    &:hover {
                         color: white;
-                        background-color: black;
+                        background-color:#60663E;
                     }
                 }
             }
 
-            .link{
+            .link {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
             }
         }
-        .right-side{
-            width: 60%;
+
+        .right-side {
+            width: 62%;
             background-color: white;
             padding: 10px;
 
-            img{
+            img {
+                width: 100%;
                 margin-bottom: 5px;
             }
 
-            p{
-            font-size: 12px;
+            p {
+                font-size: 12px;
             }
-div.more {
-    text-align: right;
-    a {
-        font-size: 10px;
-        color: red;
-    }
-}
+
+            div.more {
+                text-align: right;
+
+                a {
+                    font-size: 10px;
+                    color: red;
+                }
+            }
 
         }
 
-        h4{
+        h4 {
             color: red;
             border-bottom: 2px dashed red;
             font-weight: unset;
