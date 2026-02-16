@@ -1,11 +1,13 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
+    background-color: darkgray;
 }
 
 div#parent {
     border: 1px solid black;
     width: 780px;
     margin: 0 auto;
+    background-color: white;
 }
 
 div#parent section {
@@ -33,13 +35,20 @@ section.main-content-area {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    background-image: url("files/uofu_medallion_rt.gif");
+    background-repeat: no-repeat;
+    background-position: bottom right;
 
     nav.secondary {
         min-height: 20px;
         border: 1px dotted green;
-        text-align: right;
+        /*text-align: right;*/
         margin-right: 20px;
         font-size: 13px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 10px;
 
         a { /*target all link*/
             margin: 5px;
@@ -71,6 +80,8 @@ section.main-content-area {
         min-height: 400px;
         display: flex;
         justify-content: space-between;
+        width: 90%;
+        margin: 0 auto 70px;
 
         > * {
             margin: 10px
@@ -96,7 +107,7 @@ section.main-content-area {
 
                     &:hover {
                         color: white;
-                        background-color:#60663E;
+                        background-color: #60663E;
                     }
                 }
             }
